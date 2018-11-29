@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+
+
+<div class="artist-container">
+    {{#each artists}}
+    <img class="artist-img" src="{{images.1.url}}">
+    <div class="artist-info-container">
+        <p class="artist-info-container p">{{name}}</p>
+        <div class="item-footer a">
+            <a class="artist-info-container a" href="/albums/{{id}}">View Album</a>
+        </div>
+    {{/each}}
+    </div>
